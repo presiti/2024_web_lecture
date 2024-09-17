@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: notoSans;
+  src: url(/fonts/notoSans.woff2) format("woff2"),
+    url(/fonts/notoSans.woff) format("woff");
+}
 
 * {
   padding: 0;
@@ -10,19 +14,32 @@
 
 header {
   width: 1000px;
-  height: 100px;
   background-color: navy;
 }
 
 nav {
   width: 1000px;
-  height: 50px;
   background-color: darkslateblue;
 }
 
 #container {
   width: 1000px;
+  #story {
+    background-color: olivedrab;
+    height: 800px;
+  }
+
+  #social {
+    background-color: cadetblue;
+    height: 800px;
+  }
+
+  #gallery {
+    background-color: teal;
+    height: 800px;
+  }
 }
 
 aside {
+  background-color: aqua;
 }
