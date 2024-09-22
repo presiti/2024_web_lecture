@@ -4,58 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Google icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <title>2</title>
   </head>
   <body>
-    <div id="container">
-      <header>
-        <img src="../image/logo.png" alt="logo" />
-      </header>
+    <header>
+      <img src="../image/logo.png" alt="logo" />
 
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li><a href="#">Buy now</a></li>
+        <ul class="nav-bar">
+          <li class="menu"><a href="#about">About</a></li>
+          <li class="menu"><a href="#news">News</a></li>
+          <li class="menu"><a href="#gallery">Gallery</a></li>
+          <li>
+            <a>Buy now</a>
+            <ul class="sub-bar">
+              <li><a href="#"></a>steam</li>
+              <li><a href="#"></a>itch.io</li>
+              <li><a href="#"></a>nintendo</li>
+            </ul>
+          </li>
           <li><a href="#">Updates</a></li>
         </ul>
       </nav>
       <!-- Emment : nav>ul>li*2+li*3>a:link -->
+    </header>
 
-      <div id="content">
-        <section id="about">
-          <h2>About</h2>
-          <h3>concept</h3>
-          <p>
-            이 게임의 스토리와 컨셉을 소개하고 장르 및 이 게임만의 특징을
-            소개합니다.
-          </p>
-          <h3>awards</h3>
-          <div class="awards"></div>
-        </section>
+    <div id="container">
+      <section id="about">
+        <h2>About</h2>
+        <h3>concept</h3>
+        <p>
+          이 게임의 스토리와 컨셉을 소개하고 장르 및 이 게임만의 특징을
+          소개합니다.
+        </p>
+        <h3>awards</h3>
+        <div class="awards"></div>
+      </section>
 
-        <section id="news">
-          <h2>News</h2>
-          <p>공식 SNS와 최근 소식을 제공합니다.</p>
-        </section>
+      <section id="news">
+        <h2>News</h2>
+        <p>공식 SNS와 최근 소식을 제공합니다.</p>
+      </section>
 
-        <section id="gallery">
-          <h2>Gallery</h2>
-          <div>
-            <p>인게임 이미지나 영상을 추가합니다.</p>
-          </div>
-        </section>
-      </div>
-
-      <aside>
-        <input id="scroll-top" type="button" value="top button" />
-      </aside>
-      <script src="./script.js"></script>
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div>
+          <p>인게임 이미지나 영상을 추가합니다.</p>
+        </div>
+      </section>
     </div>
+
+    <aside>
+      <aside>
+        <a href="#container">
+          <span id="scroll-top" class="material-symbols-outlined">
+            keyboard_arrow_up
+          </span>
+        </a>
+      </aside>
+    <script src="./script.js"></script>
   </body>
 </html>

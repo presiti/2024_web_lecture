@@ -13,11 +13,14 @@
   box-sizing: border-box;
   font-family: "Noto Sans KR", system-ui;
   font-weight: normal;
-  font-size: 14pt;
+  font-size: 10pt;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(88, 214, 214);
 }
 
 body::before {
-  background-image: url(../image/background2.png);
+  background-image: url(../image/background.png);
   background-size: cover;
   position: fixed;
   left: 0;
@@ -28,43 +31,78 @@ body::before {
   z-index: -1;
 }
 
-#container {
-  width: 1100px;
-  margin: 0 auto;
-  background: linear-gradient(
-    rgba(0, 21, 15, 0.3) 0%,
-    rgba(11, 54, 49, 0.5) 50%,
-    rgba(51, 0, 48, 0.3) 100%
-  );
-}
-
-header,
-nav,
+.menu,
 h2 {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-weight: 500;
-  font-size: 18pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25pt;
+  padding: 100px 0 50px 0;
 }
 
 h3 {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 17pt;
 }
 
 header {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
   width: 1000px;
-  height: 100px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 150px;
+    object-fit: contain;
+  }
 }
 
 nav {
-  position: fixed;
-  width: 1000px;
-  list-style: none;
+  width: 600px;
+  ul.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    li.menu {
+      position: relative;
+      padding: 10px 20px;
+      font-size: 18pt;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+  ul.sub-bar {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+  }
+}
+.menu:hover {
+  color: #ffff;
+  background-color: rgba(0, 255, 255, 0.25);
+  ul.sub-menu {
+    display: flex;
+  }
 }
 
 #container {
-  width: 1000px;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(
+    rgba(0, 21, 15, 0.3) 0%,
+    rgba(11, 54, 49, 0.5) 50%,
+    rgba(51, 0, 48, 0.3) 100%
+  );
   #about {
     min-height: 800px;
   }
@@ -82,4 +120,19 @@ aside {
   position: fixed;
   right: 30px;
   bottom: 30px;
+  cursor: pointer;
+
+  span#scroll-top {
+    width: 50px;
+    height: 50px;
+    border: 1px solid aqua;
+    background-color: #00ffff25;
+    text-align: center;
+    line-height: 45px;
+    transition: 0.3s;
+  }
+  span#scroll-top:hover {
+    color: rgb(255, 255, 255);
+    background-color: #00ffff50;
+  }
 }
