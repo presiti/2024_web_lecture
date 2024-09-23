@@ -7,28 +7,41 @@
 /* Google Noto Sans*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 
+/* nomalize */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans KR", system-ui;
-  font-weight: normal;
-  font-size: 11pt;
-  list-style: none;
-  text-decoration: none;
+}
+
+body {
   color: aqua;
 }
 
-h2,
-.menu {
+h2 {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
-  font-weight: 500;
-  font-size: 18pt;
+  font-size: 25pt;
+  text-align: center;
+  padding: 100px 0 50px 0;
 }
-h3 {
+
+h3,
+li.menu > a {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 17pt;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+p {
+  font-family: "Noto Sans KR", system-ui;
+  font-weight: normal;
+  font-size: 10pt;
+  text-decoration: none;
 }
 
 header {
