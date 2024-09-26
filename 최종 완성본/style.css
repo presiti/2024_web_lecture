@@ -16,7 +16,7 @@
 }
 
 body {
-  color: aqua;
+  color: #00ffff;
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
   font-size: 25pt;
   text-align: center;
   font-weight: 700;
-  padding: 100px 0 50px 0;
+  padding: 50px 0;
   color: inherit;
 }
 
@@ -45,7 +45,9 @@ p {
   font-weight: normal;
   font-size: 10pt;
   text-decoration: none;
-  color: inherit;
+  color: #e6ffff;
+  white-space: normal;
+  word-break: keep-all;
 }
 
 /* background image */
@@ -72,26 +74,24 @@ header {
   z-index: 1;
   width: 1100px;
   height: 100px;
-  width: 1100px;
-  height: 100px;
   padding: 20px 0;
   display: flex;
   justify-content: space-around;
-  background-color: #00000075;
-  backdrop-filter: blur(10px);
-  img {
-    width: 150px;
-    object-fit: contain;
-  }
+  background-color: #00000080;
+  backdrop-filter: blur(15px);
+}
+img {
+  width: 150px;
+  object-fit: contain;
 }
 
-li {
+nav > li {
   color: inherit;
 }
-li:hover {
-  color: #ffff;
+nav li:hover {
+  color: #e6ffff;
   background-color: #00ffff25;
-  border: 1px solid aqua;
+  border: 1px solid #00ffff;
 }
 nav > ul#nav-bar {
   width: 700px;
@@ -103,10 +103,10 @@ nav > ul#nav-bar {
 
 ul#nav-bar > li.menu {
   position: relative;
-  width: 110px;
-  padding: 10px 0;
+  padding: 10px 20px;
   cursor: pointer;
   text-align: center;
+  transition: 0.3s;
 }
 
 li.menu > ul#sub-bar {
@@ -121,6 +121,8 @@ li.menu > ul#sub-bar {
 ul#sub-bar > li.sub-menu {
   padding: 10px;
   text-align: left;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
 }
 
 li.menu:hover > ul#sub-bar {
@@ -138,36 +140,35 @@ aside {
 span#scroll-top {
   width: 50px;
   height: 50px;
-  border: 1px solid aqua;
+  border: 1px solid #00ffff;
   background-color: #00ffff25;
   text-align: center;
   line-height: 45px;
   transition: 0.3s;
 }
 span#scroll-top:hover {
-  color: rgb(255, 255, 255);
+  color: #e6ffff;
   background-color: #00ffff50;
 }
 
 /* Content */
 #container {
-  width: 1100px;
+  width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 200px;
   backdrop-filter: blur(2px);
-  background: linear-gradient(
-    rgba(0, 21, 15, 0.3) 0%,
-    rgba(11, 54, 49, 0.5) 50%,
-    rgba(51, 0, 48, 0.3) 100%
-  );
+  background: linear-gradient(#00150f30 0%, #0b363150 50%, #33003030 100%);
+  overflow: hidden;
 }
 section {
   width: 900px;
   margin: 0 auto;
+  padding-bottom: 150px;
 }
 
 h3 {
-  margin: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #trailer {
@@ -175,8 +176,8 @@ h3 {
 }
 
 #trailer > iframe {
-  border: 1px solid aqua;
-  box-shadow: 0 0 20px aqua;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 20px #00ffff;
 }
 
 #about {
@@ -185,12 +186,11 @@ h3 {
 }
 div.concept {
   width: 700px;
+  padding-bottom: 60px;
   margin: 0 auto;
 }
 div.concept > p {
   margin-bottom: 5px;
-  white-space: normal;
-  word-break: keep-all;
 }
 div.concept > p.sub-title {
   font-size: 12pt;
@@ -199,8 +199,8 @@ div.concept > p.sub-title {
 }
 div.concept > img {
   width: 700px;
-  margin: auto;
-  padding: 10px 0 40px 0;
+  border: 2px solid #00ffff20;
+  margin: 10px 0 40px 0;
   display: block;
   object-fit: contain;
 }
@@ -217,9 +217,78 @@ div.awards > img {
 }
 
 #news {
-  height: 800px;
+  width: 800px;
+  height: auto;
+}
+
+.news-article {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.news-img > img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-img {
+  position: relative;
+  transition: 0.3s;
+}
+
+.news-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(#00000000 0%, #10212c 100%);
+  transition: 0.3s;
+}
+
+.info {
+  padding: 20px;
+  border: 5px solid #10212c;
+  background: linear-gradient(#172e40, #10212c);
+}
+
+.news-article:hover {
+  box-shadow: 0 0 10px #00ffff;
 }
 
 #gallery {
   height: 800px;
+  margin-bottom: 250px;
+}
+#gallery-slide {
+  width: 650px;
+  margin: auto;
+  overflow: hidden;
+}
+#gallery-slide img {
+  width: 650px;
+  height: 400px;
+  object-fit: contain;
+}
+
+#gallery-slide > ul {
+  display: flex;
+  width: 100%;
+}
+
+#gallery-vedio {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#gallery-vedio img {
+  width: 290px;
+  object-fit: contain;
 }

@@ -23,15 +23,15 @@
           <li class="menu">
             <a>Buy now</a>
             <ul id="sub-bar">
-              <li class="sub-menu"><a href="#"></a>steam</li>
-              <li class="sub-menu"><a href="#"></a>itch.io</li>
-              <li class="sub-menu"><a href="#"></a>nintendo</li>
+              <li class="sub-menu"><a href="#">steam</a></li>
+              <li class="sub-menu"><a href="#">itch.io</a></li>
+              <li class="sub-menu"><a href="#">nintendo</a></li>
             </ul>
           </li>
           <li class="menu"><a href="#">Updates</a></li>
         </ul>
       </nav>
-      <!-- Emment : nav>ul>li*2+li*3>a:link -->
+      <!-- Emment : nav>ul>(li*4>a[herf="#"])+(li>a[href="#"]>ul>li*3>a[href="#"]) -->
     </header>
 
     <div id="container">
@@ -73,10 +73,13 @@
 
       <section id="news">
         <h2>News</h2>
+        <!-- Emment : a[href="#"]*3>(div.news-img>img)+(div.info>p+span.info-date) -->
         <a href="#" class="news-article">
-          <img src="../image/news03.jpeg" alt="">
+          <div class="news-img">
+            <img src="../image/news03.jpeg" alt="새로운 소식 - Best desktop/Console 노미네이트">
+          </div>
           <div class="info">
-            <p>산나비>가 제16회 유니티 어워즈 &quot;Best desktop/Console&quot; 수상 후보로 노미네이트되었습니다!!
+            <p>산나비&gt;가 제16회 유니티 어워즈 &quot;Best desktop/Console&quot; 수상 후보로 노미네이트되었습니다!!
 
               여러분들의 사랑과 관심 덕분에 이렇게 뜻깊은 자리에 올라보네요 😂😂😂
               
@@ -85,10 +88,12 @@
           </div>
         </a>
         <a href="#" class="news-article">
-          <img src="../image/news02.jpeg" alt="">
+          <div class="news-img">
+            <img src="../image/news02.jpeg" alt="새로운 소식 - BIC 굿즈 판매 공지">
+          </div>
           <div class="info">
             <p>
-              📢<산나비> BIC 굿즈 판매 공지📢
+              📢&lt;산나비&gt; BIC 굿즈 판매 공지📢
 
               8월 16일부터 18일까지, 부산 벡스코에서 열리는 BIC에 &lt;산나비&gt;가 참여합니다!<br>
               이번 BIC에서는  &quot;&lt;산나비&gt; 오피셜 아트웍스 &amp; 미공개 데이터팩&quot;의 굿즈 재고를 &quot;소량&quot; 판매합니다!<br>
@@ -99,7 +104,9 @@
         </a>
         
         <a href="#" class="news-article">
-          <img src="../image/news01.jpeg" alt="">
+          <div class="news-img">
+            <img src="../image/news01.jpeg" alt="새로운 소식 - 인디게임 개발 어워드 수상">
+          </div>
           <div class="info">
             <p>
               산나비, ‘최고의 액션 어드벤처 게임’ 수상 🎉🎊<br>
@@ -114,8 +121,27 @@
 
       <section id="gallery">
         <h2>Gallery</h2>
-        <div>
-          <p>인게임 이미지나 영상을 추가합니다.</p>
+        <div id="gallery-slide">
+          <ul>
+            <li class="slied-box"><img src="../image/gallery01.jpg" alt=" "></li>
+            <li class="slied-box"><img src="../image/gallery02.jpg" alt=""></li>
+            <li class="slied-box"><img src="../image/gallery03.jpg" alt=""></li>
+            <li class="slied-box"><img src="../image/gallery04.jpeg" alt=""></li>
+            <li class="slied-box"><img src="../image/gallery05.jpg" alt=""></li>
+          </ul>
+          <!-- Emment : ul>div.slide-btn*2+li.slied-box*5>img -->
+        </div>
+
+        <div id="gallery-vedio">
+          <a href="https://youtube.com/playlist?list=PLT-nNSx6k7OGFGoxaFXLFSSPTmT_N8tdc&si=wgBOtchLy2ZNuLfy">
+            <img src="../image/OST_Sanabi-Soundtrack.jpg" alt="">
+          </a>
+          <a href="https://youtu.be/NwuEoDvSOLw?si=TTKFxtiFnK4SQ5FT">
+            <img src="../image/OST_ending.png" alt="">
+          </a>
+          <a href="https://youtu.be/hpI1VYahclc?si=sABkOJj9tdHyg7Z5">
+            <img src="../image/OST_TheEnding.png" alt="">
+          </a>
         </div>
       </section>
     </div>
