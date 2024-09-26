@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sub-style.css" />
+    <title>sub</title>
+  </head>
+  <body>
+    <header>
+      <img src="../../image/logo.png" alt="logo" />
+      <nav>
+        <ul id="nav-bar">
+          <li class="menu"><a href="#about">About</a></li>
+          <li class="menu"><a href="#news">News</a></li>
+          <li class="menu"><a href="#gallery">Gallery</a></li>
+          <li class="menu">
+            <a>Buy now</a>
+            <ul id="sub-bar">
+              <li class="sub-menu"><a href="#">steam</a></li>
+              <li class="sub-menu"><a href="#">itch.io</a></li>
+              <li class="sub-menu"><a href="#">nintendo</a></li>
+            </ul>
+          </li>
+          <li class="menu"><a href="page.html">Updates</a></li>
+        </ul>
+      </nav>
+      <!-- Emment : nav>ul>(li*4>a[herf="#"])+(li>a[href="#"]>ul>li*3>a[href="#"]) -->
+    </header>
+
+    <div id="container">
+      <section id="updates">
+        <h2>Updates</h2>
+        <!-- tab navgation bar -->
+        <div id="tab-area">
+          <ul id="tab-nav">
+            <li class="tab-menu">Notice</li>
+            <li class="tab-menu">Update</li>
+            <li class="tab-menu">Patch Note</li>
+          </ul>
+
+          <div id="info-area">
+            <img src="../../image/update.png" alt="업데이트 이미지" />
+
+            <!-- Emment :div.tab-info*3>ul.info-list>li*5.info-title>a[href="#"] -->
+            <div class="tab-info notice">
+              <ul class="info-list">
+                <li class="info-title">
+                  <a href="#">스피드런 모드 업데이트</a>
+                </li>
+                <li class="info-title">
+                  <a href="#">산나비 정식 출시 안내</a>
+                </li>
+                <li class="info-title">
+                  <a href="#">지역별 출시 시간에 대해</a>
+                </li>
+                <li class="info-title">
+                  <a href="#">산나비 정식 트레일러 공개 및 정식 출시일 안내</a>
+                </li>
+                <li class="info-title">
+                  <a href="#">파이널 베타버전 업데이트 공지</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-info update">
+              <ul class="info-list">
+                <li class="info-title">
+                  <a href="#">1.3.36 버전 업데이트 공지</a>
+                </li>
+                <li class="info-title">
+                  <a href="#">1.3.34 버전 업데이트 공지</a>
+                </li>
+                <li class="info-title"><a href="#">1.3.32버전 업데이트</a></li>
+                <li class="info-title"><a href="#">1.3.0버전 업데이트</a></li>
+                <li class="info-title"><a href="#">1.3.28 업데이트</a></li>
+                <li class="info-title"><a href="#">1.3.25 업데이트</a></li>
+              </ul>
+            </div>
+
+            <div class="tab-info patch-note">
+              <ul class="info-list">
+                <li class="info-title"><a href="#">1.3.35 핫픽스</a></li>
+                <li class="info-title"><a href="#">1.3.31 핫픽스</a></li>
+                <li class="info-title">
+                  <a href="#">Release 1.3.9 패치 핫픽스</a>
+                </li>
+                <li class="info-title"><a href="#"></a></li>
+                <li class="info-title"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+    <source src="../script.js" />
+  </body>
+</html>
