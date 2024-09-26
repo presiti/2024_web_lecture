@@ -83,9 +83,9 @@ li {
   color: inherit;
 }
 li:hover {
-  color: #ffff;
+  color: #e6ffff;
   background-color: #00ffff25;
-  border: 1px solid aqua;
+  border: 1px solid #00ffff;
 }
 nav > ul#nav-bar {
   width: 700px;
@@ -132,14 +132,15 @@ aside {
 span#scroll-top {
   width: 50px;
   height: 50px;
-  border: 1px solid aqua;
+  color: #00ffff;
+  border: 1px solid #00ffff;
   background-color: #00ffff25;
   text-align: center;
   line-height: 45px;
   transition: 0.3s;
 }
 span#scroll-top:hover {
-  color: rgb(255, 255, 255);
+  color: #e6ffff;
   background-color: #00ffff50;
 }
 
