@@ -25,8 +25,7 @@ h2 {
   padding: 50px 0;
 }
 
-h3,
-li.menu > a {
+h3, li.menu > a {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-weight: 500;
   font-size: 17pt;
@@ -36,8 +35,7 @@ ul {
   list-style: none;
 }
 
-a,
-p {
+a, p {
   font-family: "Noto Sans KR", system-ui;
   font-weight: normal;
   font-size: 10pt;

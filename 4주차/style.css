@@ -28,8 +28,7 @@ h2 {
   color: inherit;
 }
 
-h3,
-li.menu > a {
+h3, li.menu > a {
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-weight: 500;
   font-size: 20pt;
@@ -39,8 +38,7 @@ li.menu > a {
 ul {
   list-style: none;
 }
-a,
-p {
+a, p {
   font-family: "Noto Sans KR", system-ui;
   font-weight: normal;
   font-size: 10pt;
@@ -50,7 +48,6 @@ p {
   word-break: keep-all;
 }
 
-/* background image */
 /* background image */
 body::before {
   background-image: url(../image/background.png);
@@ -64,7 +61,6 @@ body::before {
   z-index: -1;
 }
 
-/* header */
 /* header */
 header {
   position: fixed;
@@ -271,6 +267,7 @@ div.awards > img {
   box-shadow: 0 0 10px #00ffff;
 }
 
+/* Gallery */
 #gallery {
   height: 800px;
   margin-bottom: 250px;

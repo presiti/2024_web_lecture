@@ -129,7 +129,7 @@ li.menu:hover > ul#sub-bar {
 
 /* tab menu */
 #updates {
-  width: 700px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -157,8 +157,8 @@ div#info-area {
   display: flex;
 }
 div#info-area > img {
-  width: 250px;
-  height: 220px;
+  width: 400px;
+  height: 250px;
   object-fit: cover;
 }
 
