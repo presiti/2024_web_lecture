@@ -39,8 +39,7 @@ li.menu > a {
 ul {
   list-style: none;
 }
-<<<<<<< Updated upstream a,
-p {
+a, p {
   font-family: "Noto Sans KR", system-ui;
   font-weight: normal;
   font-size: 10pt;
@@ -50,6 +49,7 @@ p {
   word-break: keep-all;
 }
 
+/* background image */
 /* background image */
 body::before {
   background-image: url(image/background.png);
@@ -63,6 +63,7 @@ body::before {
   z-index: -1;
 }
 
+/* header */
 /* header */
 header {
   position: fixed;
@@ -150,7 +151,6 @@ span#scroll-top:hover {
   background-color: #00ffff50;
 }
 
-<<<<<<< Updated upstream
 /* footer */
 footer {
   position: static;
@@ -229,8 +229,6 @@ footer hr {
   object-fit: contain;
 }
 
-=======
->>>>>>> Stashed changes
 /* Content */
 #container {
   width: 100%;
@@ -350,10 +348,7 @@ div.awards > img {
   box-shadow: 0 0 10px #00ffff;
 }
 
-<<<<<<< Updated upstream
 /* Gallery */
-=======
->>>>>>> Stashed changes
 #gallery {
   height: 800px;
   margin-bottom: 250px;
@@ -418,21 +413,17 @@ div.awards > img {
   transition: 0.5s;
 }
 
-<<<<<<< Updated upstream #gallery-vedio {
-  margin-top: 70px;
-}
-
-=======
-/* Gallery - vedio */
 #gallery-vedio {
   margin-top: 70px;
 }
->>>>>>>Stashed changes .vedios {
+
+.vedios {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-<<<<<<< Updated upstream =======>>>>>>>Stashed changes #gallery-vedio a {
+
+#gallery-vedio a {
   position: relative;
   width: 290px;
   overflow: hidden;
