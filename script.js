@@ -1,3 +1,4 @@
+//Slide
 // Slide의 DOM 요소 변수 선언
 const $slide = document.querySelector("#gallery-slide > ul");
 const $leftBtn = document.querySelector("div.btn-left");
@@ -17,9 +18,7 @@ const rightBtnEvent = () => {
 
     // 각 슬라이드의 left에 offset 적용 (-offset을 줘서 왼쪽으로 이동)
     $slideItems.forEach((item) => {
-      setTimeout(() => {
-        item.setAttribute("style", `left: ${-offset}px`);
-      }, 3000);
+      item.setAttribute("style", `left: ${-offset}px`);
     });
   } else {
     currentSlide--;

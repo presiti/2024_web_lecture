@@ -49,7 +49,7 @@ p {
 /* background image */
 body {
   background-color: #000;
-  background-image: url(../../image/background02.gif);
+  background-image: url(../image/background02.gif);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -165,13 +165,14 @@ li.tab-menu{
   text-align: center;
   line-height: 50px;
   background-color: #00ffff20;
+  
+  cursor: pointer;
 }
 li.tab-menu > a{
   font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
   font-size: 15pt;
   font-weight: 500;
   color: inherit;
-  cursor: pointer;
 }
 ul#tab-nav > li.selected{
   background-color: #e6ffff00;
