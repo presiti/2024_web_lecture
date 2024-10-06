@@ -39,7 +39,8 @@ li.menu > a {
 ul {
   list-style: none;
 }
-a, p {
+a,
+p {
   font-family: "Noto Sans KR", system-ui;
   font-weight: normal;
   font-size: 10pt;
@@ -92,7 +93,7 @@ nav li:hover {
   background-color: #00ffff25;
   border: 1px solid #00ffff;
 }
-nav > ul#nav-bar {
+nav > ul.nav-bar {
   width: 700px;
   height: 60px;
   display: flex;
@@ -108,7 +109,7 @@ ul#nav-bar > li.menu {
   transition: 0.3s;
 }
 
-li.menu > ul#sub-bar {
+li.menu > ul.sub-bar {
   display: none;
   float: left;
   position: absolute;
@@ -124,7 +125,7 @@ ul#sub-bar > li.sub-menu {
   backdrop-filter: blur(10px);
 }
 
-li.menu:hover > ul#sub-bar {
+li.menu:hover > ul.sub-bar {
   display: block;
 }
 

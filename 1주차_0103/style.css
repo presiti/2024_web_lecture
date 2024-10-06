@@ -1,0 +1,82 @@
+/* https://codeshare.io/240930 */
+
+@font-face {
+  font-family: "Star Dust Bold"; /* font를 부를 이름 */
+  src: local("PFstardustBold"),
+    url("./font/PF스타더스트\ 3.0\ S\ Bold.ttf") format(truetype);
+}
+
+/* Google Noto Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* normalize */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #00ffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+p {
+  text-decoration: none;
+  font-family: "Noto Sans KR", system-ui;
+  font-size: 10pt;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
+  font-size: 25pt;
+  text-align: center;
+  padding: 50px 0;
+}
+h3,
+li.menu > a {
+  font-family: "Star Dust Bold", "Noto Sans KR", system-ui;
+  font-size: 17pt;
+  font-weight: 500;
+}
+h3 {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #00000075;
+}
+
+header > img {
+  width: 150px;
+  object-fit: contain;
+}
+
+nav {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+}
+
+/* content */
+#container {
+  width: 100%;
+}
+
+section {
+  width: 900px;
+  margin: auto;
+}
