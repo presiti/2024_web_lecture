@@ -335,37 +335,37 @@ div.awards > img {
   transition: 0.5s;
 }
 
-/* Gallery - vedio */
-#gallery-vedio {
+/* Gallery - video */
+#gallery-video {
   margin-top: 70px;
 }
-.vedios {
+.videos {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-#gallery-vedio a {
+#gallery-video a {
   position: relative;
   width: 290px;
   overflow: hidden;
   border: 1px solid #00ffff;
 }
 
-#gallery-vedio img {
+#gallery-video img {
   width: 290px;
   object-fit: cover;
   transition: 0.5s;
 }
 
-#gallery-vedio span {
+#gallery-video span {
   display: none;
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 12px);
 }
-#gallery-vedio a:hover > img {
+#gallery-video a:hover > img {
   transform: scale(1.1);
 }
-#gallery-vedio a:hover span {
+#gallery-video a:hover span {
   display: block;
 }
