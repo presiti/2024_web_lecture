@@ -334,7 +334,7 @@ div.awards > img {
   transition: 0.5s;
 }
 
-/* Gallery - vedio */
+/* Gallery - video */
 #gallery-video {
   margin-top: 70px;
 }
@@ -356,7 +356,7 @@ div.awards > img {
   transition: 0.5s;
 }
 
-#gallery-vedio span {
+#gallery-video span {
   display: none;
   position: absolute;
   top: calc(50% - 12px);
